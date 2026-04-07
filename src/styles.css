@@ -1,3 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+
+/* jost-normal */
+@font-face {
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost-v20-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* jost-meduim */
+@font-face{
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost-v20-latin-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* jost-semibold */
+@font-face{
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost-v20-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* jost-bold */
+@font-face{
+  font-family: 'Jost';
+  src: url('/assets/fonts/jost-v20-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@theme {
+  /* On redéfinit les couleurs de base */
+  --color-primary: #6F4CE8;
+  --color-primary-light: #7462B8;
+
+  --color-accent-orange: #E09215;
+  --color-accent-blue: #057EBF;
+  --color-accent-green: #05BF21;
+
+
+  /* --- Variables par défaut (Mode White) --- */
+  --color-site: #FBF9FF;
+  --color-site-2: #A492E5;
+  --color-site-nav: #6F4CE8;
+  --color-site-light: #EBEAFB;
+  --color-button: #FFFFFF;
+  --color-download: #2F3244;
+  --color-main: #000000;
+
+
+  --font-sans: 'Jost', ui-sans-serif, system-ui;
+}
+
+/* --- Overrides pour le Mode Dark (Appliqué via la classe .dark sur <html>) --- */
+.dark {
+  --color-site: #151721;
+  --color-site-2: #2F3244;
+  --color-site-nav: #2F3244;
+  --color-site-light: #2F3244;
+  --color-download: #000000;
+  --color-button: #6F4CE8;
+  --color-main: #FFFFFF;
+}
+
+html, body {
+  font-family: var(--font-sans);
+}
