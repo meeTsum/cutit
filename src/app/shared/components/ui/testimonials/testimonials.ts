@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { LucideDynamicIcon } from "@lucide/angular";
+
+
 
 @Component({
   selector: 'app-testimonials',
-  imports: [],
+  imports: [LucideDynamicIcon],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.css',
 })

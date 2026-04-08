@@ -1,17 +1,17 @@
 import { Routes } from '@angular/router';
-import { LandingPage } from './features/landing-page/landing-page';
-import { Layout } from './shared/components/layout/layout';
+
 
 
 
 export const routes: Routes = [
   {
     path: '',
-    component: Layout,
+    loadComponent: ()=> import('./shared/components/layout/layout').then(c=> c.Layout),
     children: [
       {
         path: '',
-        component: LandingPage
+        loadComponent: ()=> import('./features/landing-page/landing-page').then(c=> c.LandingPage),
+        pathMatch: 'full'
       }
     ]
   },
