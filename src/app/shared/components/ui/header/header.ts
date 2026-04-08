@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, HostListener } from '@angular/core';
 import { LucideDynamicIcon } from '@lucide/angular';
 import { ThemeToggle } from '../../ui/theme-toggle/theme-toggle';
 import { LanguageSwitcher } from '../../ui/language-switcher/language-switcher';
@@ -21,13 +21,17 @@ import { Logo } from '../../ui/logo/logo';
 })
 export class Header {
 
-  isOpenMenu = signal(false)
+  isOpenMenu = signal(false);
+  isScrolled = signal(false);
+
 
   toggleMenu(){
-    console.log("1", this.isOpenMenu())
     this.isOpenMenu.update(value=> !value)
-   console.log("3", this.isOpenMenu())
+  }
 
+  @HostListener('window:scroll', [])
+  onWindowScroll(){
+    this.isScrolled.set(window.scrollY> 20)
   }
 
 }

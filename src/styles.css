@@ -53,6 +53,7 @@
   /* --- Variables par défaut (Mode White) --- */
   --color-site: #FBF9FF;
   --color-site-2: #A492E5;
+  --color-site-3: #FFFFFF;
   --color-site-nav: #6F4CE8;
   --color-site-light: #EBEAFB;
   --color-button: #FFFFFF;
@@ -67,6 +68,7 @@
 .dark {
   --color-site: #151721;
   --color-site-2: #2F3244;
+  --color-site-3: #2F3244;
   --color-site-nav: #2F3244;
   --color-site-light: #2F3244;
   --color-download: #000000;
