@@ -10,7 +10,9 @@ import {
   LucideArrowBigDown,
   LucideChartNoAxesGantt,
   LucideX,
-  LucideStar
+  LucideStar,
+  LucideChevronLeft,
+  LucideChevronRight
 } from '@lucide/angular';
 
 
@@ -28,7 +30,9 @@ export const provideLucideIcon = [
       LucideArrowBigDown,
       LucideChartNoAxesGantt,
       LucideX,
-      LucideStar
+      LucideStar,
+      LucideChevronLeft,
+      LucideChevronRight
     )
 ]
 
