@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@toolwind/corner-shape";
 
 
 /* jost-normal */
@@ -78,4 +79,13 @@
 
 html, body {
   font-family: var(--font-sans);
+}
+
+/* Cache la barre de défilement tout en gardant le scroll fonctionnel */
+.custom-scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

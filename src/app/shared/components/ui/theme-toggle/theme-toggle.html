@@ -1,16 +1,16 @@
-<div class="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm p-1 rounded-lg border border-white/10 shadow-inner">
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm p-1 rounded-lg border border-white/10 shadow-inner">
 
   <!-- Light -->
   <button (click)="setTheme('light')"
       [class]="currentTheme() === 'light' ? 'bg-white shadow-md text-black' : 'text-white/50 hover:bg-white/10'"
-      class="p-1.5 rounded-full transition-all duration-300">
+      class="p-2 rounded-full transition-all duration-300">
     <svg lucideIcon="sun" [size]="14" strokeWidth="2.5"></svg>
   </button>
 
   <!-- Dark -->
   <button (click)="setTheme('dark')"
       [class]="currentTheme() === 'dark' ? 'bg-black shadow-md text-white' : 'text-white/50 hover:bg-white/10'"
-      class="p-1.5 rounded-full transition-all duration-300">
+      class="p-2 rounded-full transition-all duration-300">
     <svg lucideIcon="moon-star" [size]="14" strokeWidth="2.5"></svg>
   </button>
 
