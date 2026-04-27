@@ -1,14 +1,12 @@
 import { Component, signal} from '@angular/core';
-import { LucideDynamicIcon } from '@lucide/angular'
-
+import { LucideModule } from '../../../lucide.module';
 
 export type Type = 'light' | 'dark' ;
 
 
 @Component({
   selector: 'app-theme-toggle',
-  standalone: true,
-  imports: [LucideDynamicIcon],
+  imports: [LucideModule],
   templateUrl: './theme-toggle.html',
   styleUrl: './theme-toggle.css',
 })

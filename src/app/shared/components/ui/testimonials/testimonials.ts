@@ -1,11 +1,10 @@
 import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { LucideDynamicIcon } from "@lucide/angular";
+import { LucideModule } from '../../../lucide.module';
 import { Testimonial } from '../../../../core/interfaces/testimonials';
 
 @Component({
   selector: 'app-testimonials',
-  standalone: true,
-  imports: [LucideDynamicIcon],
+  imports: [LucideModule],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.css',
 })

@@ -1,10 +1,9 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { LucideDynamicIcon } from '@lucide/angular';
+import { LucideModule } from '../../../lucide.module';
 
 @Component({
   selector: 'app-showcase',
-  standalone: true,
-  imports: [LucideDynamicIcon],
+  imports: [LucideModule],
   templateUrl: './showcase.html',
   styleUrl: './showcase.css',
 })

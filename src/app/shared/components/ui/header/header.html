@@ -13,7 +13,7 @@
     <div class="flex md:hidden items-center gap-2">
       @if(!this.isOpenMenu()){
         <div (click)="toggleMenu()">
-          <svg lucideIcon="chart-no-axes-gantt" class="size-6 cursor-pointer" strokeWidth="2.5"></svg>
+          <lucide-icon name="chart-no-axes-gantt" class="size-6 cursor-pointer" strokeWidth="2.5"></lucide-icon>
         </div>
       } @else {
         <div class="flex flex-col text-l fixed top-0 right-0 w-full h-screen z-20 bg-site-light text-main md:hidden">
@@ -23,7 +23,7 @@
             <div class="flex items-center justify-between gap-3">
               <app-theme-toggle/>
               <div (click)="toggleMenu()">
-                <svg lucideIcon="x" class="size-6 cursor-pointer stroke-white" strokeWidth="2.5"></svg>
+                <lucide-icon name="x" class="size-6 cursor-pointer stroke-white" strokeWidth="2.5"></lucide-icon>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@
 
     <button class="hidden md:flex items-center gap-1 text-sm bg-button text-main px-4 py-2 rounded-lg">
       Télécharger
-      <svg lucideIcon="arrow-big-down" size="16" strokeWidth="2.5"></svg>
+      <lucide-icon name="arrow-big-down" size="16" strokeWidth="2.5"></lucide-icon>
     </button>
   </div>
 </header>

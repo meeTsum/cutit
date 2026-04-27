@@ -1,17 +1,79 @@
-<section class="bg-site-2/15 text-main min-h-[50vh] font-normal">
-  <div class="flex flex-col items-center container mx-auto px-6 py-6 gap-4">
-    <div class="flex flex-col px-4 py-4 justify-center">
-        <h3>Comment ça marche ?</h3>
-        <p>
-          Découper une vidéo longue en plusieurs clips peut vite devenir une tâche répétitive.
-          Il faut couper, exporter, puis recommencer encore et encore pour chaque segment.
-          Ce processus prend du temps et ralentit la création.
-          Cutit automatise ce travail pour toi en quelques clics ! Essayez gratuitement
-        </p>
+<section class="relative bg-site-light text-main">
+
+  <div class="relative z-10 flex flex-col items-center justify-center mx-auto px-10 py-6 md:py-15 md:px-50 text-center w-full gap-10">
+
+    <div class="flex flex-col items-center justify-center gap-6">
+      <h2 class="text-xl md:text-2xl font-semibold">Comment ça marche</h2>
+      <p class="hidden lg:block text-base text-center opacity-70 lg:px-75">
+        Découper une vidéo longue en plusieurs clips peut vite devenir une tâche répétitive.
+        Il faut couper, exporter, puis recommencer encore et encore pour chaque segment. Ce processus prend du temps et ralentit la création.
+        Cutit automatise ce travail pour toi en quelques clics ! Essayez gratuitement
+      </p>
     </div>
 
-    <div class="flex flex-col md:flex-row">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 w-full gap-4 md:gap-6">
+
+      <div class="flex flex-col items-center bg-site border-gray-100 rounded-[2.5rem] px-6 py-8 gap-4 transition duration-300 hover:shadow-2xl">
+        <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+          <lucide-icon name="circle-plus" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h4 class="font-bold">Sélectionner une vidéo</h4>
+          <p>Importer depuis votre galerie</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center bg-site border-gray-100 rounded-[2.5rem] px-6 py-8 gap-4 transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2 group-hover:rotate-10">
+        <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+          <lucide-icon name="circle-plus" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h4 class="font-bold">Ajustez la durée</h4>
+          <p>Définissez vos préférence de temps en un clic</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center bg-site border-gray-100 rounded-[2.5rem] px-6 py-8 gap-4">
+        <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+          <lucide-icon name="circle-plus" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h4 class="font-bold">Découpage automatique</h4>
+          <p>Cutit s'occupe de découper avec précision vos vidéos</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center bg-site border-gray-100 rounded-[2.5rem] px-6 py-8 gap-4">
+        <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+          <lucide-icon name="circle-plus" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h4 class="font-bold">Sauvegarder</h4>
+          <p>Choisissez vos segments à enregistrer ou exporter</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center bg-site border-gray-100 rounded-[2.5rem] px-6 py-8 gap-4">
+        <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+          <lucide-icon name="circle-plus" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+        </div>
+
+        <div class="flex flex-col items-center justify-center gap-4">
+          <h4 class="font-bold">Partager</h4>
+          <p>Directement sur vos réseaux Whatsapp, tiktok, Youtube, Insta, FB etc...</p>
+        </div>
+      </div>
 
     </div>
+
+    <div class="w-full flex flex-col items-center justify-center pt-10">
+      <app-download/>
+    </div>
+
   </div>
+
 </section>

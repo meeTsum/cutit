@@ -1,15 +1,15 @@
 import { Component, signal, HostListener } from '@angular/core';
-import { LucideDynamicIcon } from '@lucide/angular';
 import { ThemeToggle } from '../../ui/theme-toggle/theme-toggle';
 import { LanguageSwitcher } from '../../ui/language-switcher/language-switcher';
 import { Footer } from '../footer/footer';
 import { Download } from '../../ui/download/download';
 import { Logo } from '../../ui/logo/logo';
+import { LucideModule } from '../../../lucide.module';
 
 @Component({
   selector: 'app-header',
   imports: [
-    LucideDynamicIcon,
+    LucideModule,
     ThemeToggle,
     LanguageSwitcher,
     Footer,

@@ -29,9 +29,9 @@
     "@angular/forms": "^21.1.0",
     "@angular/platform-browser": "^21.1.0",
     "@angular/router": "^21.1.0",
-    "@lucide/angular": "^1.7.0",
     "@ngx-translate/core": "^17.0.0",
     "@toolwind/corner-shape": "^0.0.8-3",
+    "lucide-angular": "^1.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },

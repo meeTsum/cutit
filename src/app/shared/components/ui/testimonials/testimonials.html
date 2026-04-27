@@ -10,15 +10,15 @@
            class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide items-center gap-10 font-medium custom-scrollbar-hide">
 
           @for (testimonial of testimonials; track $index) {
-            <div class="flex flex-col flex-none w-[85%] bg-site-3 border rounded-[2.5rem] border-gray-500/10 px-8 py-8 md:w-[calc(40%-12px)] lg:w-[calc(33.33%-16px)] gap-4">
+            <div class="flex flex-col flex-none w-[85%] bg-site-3 border rounded-[2.5rem] border-gray-500/10 py-8 px-4 md:w-[calc(40%-12px)] lg:w-[calc(33.33%-16px)] gap-4">
 
               <!-- Stars -->
               <div class="flex flex-row items-center justify-center text-yellow-500 md:items-start md:justify-start">
                 @for (star of [1,2,3,4,5]; track star) {
-                  <svg lucideIcon="star"
+                  <lucide-icon name="star"
                        class="size-4"
                        [attr.fill]="testimonial.rating >= star ? 'currentColor' : 'none'">
-                  </svg>
+                  </lucide-icon>
                 }
               </div>
 
