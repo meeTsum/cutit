@@ -1,0 +1,20 @@
+import { Testimonial } from '../../core/interfaces/testimonials';
+
+export const TESTIMONIALS: Testimonial[] = [
+  { name: 'Inès L.',      role: 'Influenceuse Instagram', content: 'J\'utilise Cutit pour toutes mes Stories et Instagram Reels. Avant, je passais 15 minutes à découper manuellement mes vidéos. Maintenant, c\'est fait en 5 secondes chrono et la qualité reste parfaite ! 🔥', initials: 'IL', rating: 5 },
+  { name: 'Maxime R.',    role: 'Community Manager',      content: 'Indispensable pour alimenter nos comptes TikTok et Shorts. L\'interface est ultra-fluide et l\'export groupé nous fait gagner un temps précieux au quotidien.', initials: 'MR', rating: 5 },
+  { name: 'Lucas D.',     role: 'Vlogueur & Voyageur',    content: 'Le meilleur outil pour partager mes vlogs de voyage sur mes statuts WhatsApp sans que ce soit coupé n\'importe comment. Simple, gratuit et redoutablement efficace.', initials: 'LD', rating: 5 },
+  { name: 'Julie B.',     role: 'Créatrice TikTok',       content: 'Je ne comprenais jamais pourquoi mes clips perdaient en qualité sur les autres applis. Avec Cutit, le rendu reste net et limpide. Je recommande à 100% !', initials: 'JB', rating: 5 },
+  { name: 'Thomas P.',    role: 'Podcasteur',             content: 'Je filme des épisodes de 2 heures et Cutit me permet d\'en extraire très rapidement des clips courts d\'une minute pour faire du teasing sur les réseaux. Un vrai bonheur.', initials: 'TP', rating: 5 },
+  { name: 'Sarah M.',     role: 'Coach Fitness',          content: 'Mes séances d\'entraînement font souvent plus de 10 minutes. Cutit me permet de les segmenter proprement en clips de 30 secondes pour mes abonnés. Gain de temps incroyable.', initials: 'SM', rating: 5 },
+  { name: 'Alexandre G.', role: 'Social Media Manager',   content: 'L\'interface de Cutit est d\'une fluidité incroyable. Il n\'y a aucune publicité intrusive, l\'application fait exactement ce qu\'elle promet.', initials: 'AG', rating: 5 },
+  { name: 'Sophie K.',    role: 'Formatrice en ligne',    content: 'J\'avais besoin d\'un outil simple pour envoyer des extraits de mes cours à mes élèves via WhatsApp. Cutit a résolu mon problème en deux clics.', initials: 'SK', rating: 5 },
+  { name: 'Nicolas H.',   role: 'Vidéaste Indépendant',   content: 'J\'apprécie particulièrement le fait qu\'il n\'y ait aucun filigrane (watermark) forcé sur les clips exportés. Une superbe application respectueuse de ses utilisateurs.', initials: 'NH', rating: 5 },
+  { name: 'Chloé V.',     role: 'Entrepreneuse',          content: 'Un gain de productivité énorme pour notre marque de vêtements. Nous publions 5 fois plus de contenu qu\'avant sur nos réseaux sociaux !', initials: 'CV', rating: 5 },
+  { name: 'David M.',     role: 'Youtuber Tech',          content: 'Parfait pour recycler mes longues reviews en formats courts pour Shorts. L\'outil est d\'une rapidité bluffante.', initials: 'DM', rating: 5 },
+  { name: 'Emma T.',      role: 'Influenceuse Beauté',    content: 'Couper mes tutos maquillage en petits clips n\'a jamais été aussi facile. Cutit a littéralement changé mon flux de travail !', initials: 'ET', rating: 5 },
+  { name: 'Julien F.',    role: 'Streamer Twitch',        content: 'J\'extrais les meilleurs moments de mes streams en quelques clics. La qualité d\'export est irréprochable et ça va super vite.', initials: 'JF', rating: 5 },
+  { name: 'Clara S.',     role: 'Blogueuse Culinaire',    content: 'Mes recettes vidéos sont découpées proprement pour Instagram et TikTok. Mes abonnés adorent la fluidité des transitions.', initials: 'CS', rating: 5 },
+  { name: 'Marc E.',      role: 'Consultant Marketing',   content: 'L\'outil indispensable pour toute équipe de communication. L\'absence de filigrane est un énorme point fort par rapport à la concurrence.', initials: 'ME', rating: 5 },
+  { name: 'Léa P.',       role: 'Photographe & Vidéaste', content: 'Une interface minimaliste mais redoutable d\'efficacité. L\'exportation est instantanée, c\'est un vrai plaisir à utiliser.', initials: 'LP', rating: 5 }
+];
