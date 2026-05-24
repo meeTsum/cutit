@@ -1,1 +1,0 @@
-import{Ma as o,Na as n,Za as a,ua as t}from"./chunk-GZ7A4Y6H.js";var s=class r{static \u0275fac=function(e){return new(e||r)};static \u0275cmp=t({type:r,selectors:[["app-error"]],decls:2,vars:0,template:function(e,m){e&1&&(o(0,"p"),a(1,"error works!"),n())},encapsulation:2})};export{s as Error};
