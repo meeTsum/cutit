@@ -10,7 +10,7 @@
            class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide items-center gap-10 font-medium custom-scrollbar-hide">
 
           @for (testimonial of testimonials; track $index) {
-            <div class="flex flex-col flex-none w-[85%] bg-site-3 border rounded-[2.5rem] border-gray-500/10 py-8 px-4 md:w-[calc(40%-12px)] lg:w-[calc(33.33%-16px)] gap-4 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_15px_30px_rgba(60,21,201,0.08)] transition-all duration-300 ease-out cursor-pointer"
+            <div class="flex flex-col flex-none w-[85%] bg-site-3 border rounded-[2.5rem] border-gray-500/10 py-8 px-4 md:w-[calc(40%-12px)] lg:w-[calc(25%-30px)] gap-4 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_15px_30px_rgba(60,21,201,0.08)] transition-all duration-300 ease-out cursor-pointer"
                  appScrollReveal [revealDelay]="$index * 80">
 
               <!-- Stars -->
@@ -53,7 +53,7 @@
                   [style.width.px]="$index === currentIndicator ? 48 : 8">
 
             <!-- Progress Fill (Active or Completed) -->
-            <div class="absolute top-0 left-0 h-full bg-site-nav transition-all duration-300"
+            <div class="absolute top-0 left-0 h-full bg-site-nav"
                  [style.width.%]="$index < currentIndicator ? 100 : ($index === currentIndicator ? displayProgress : 0)">
             </div>
           </button>
