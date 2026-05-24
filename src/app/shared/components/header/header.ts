@@ -5,7 +5,7 @@ import { Footer } from '../footer/footer';
 import { Download } from '../download/download';
 import { Logo } from '../logo/logo';
 import { LucideModule } from '../../lucide.module';
-import { AlreveleTranslatorModule } from '@alrevele/translator';
+import { TrlFallbackPipe } from '../../pipes/trl-fallback.pipe';
 
 @Component({
   selector: 'app-header',
@@ -16,7 +16,7 @@ import { AlreveleTranslatorModule } from '@alrevele/translator';
     Footer,
     Download,
     Logo,
-    AlreveleTranslatorModule
+    TrlFallbackPipe
   ],
   templateUrl: './header.html',
   styleUrl: './header.css',

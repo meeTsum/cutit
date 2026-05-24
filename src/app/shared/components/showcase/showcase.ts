@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { LucideModule } from '../../lucide.module';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
-import { AlreveleTranslatorModule } from '@alrevele/translator';
+import { TrlFallbackPipe } from '../../pipes/trl-fallback.pipe';
 
 @Component({
   selector: 'app-showcase',
-  imports: [LucideModule, ScrollRevealDirective, AlreveleTranslatorModule],
+  imports: [LucideModule, ScrollRevealDirective, TrlFallbackPipe],
   templateUrl: './showcase.html',
   styleUrl: './showcase.css',
 })

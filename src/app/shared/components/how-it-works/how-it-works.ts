@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Download } from "../download/download";
 import { LucideModule } from '../../lucide.module';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
-import { AlreveleTranslatorModule } from '@alrevele/translator';
+import { TrlFallbackPipe } from '../../pipes/trl-fallback.pipe';
 
 @Component({
   selector: 'app-how-it-works',
-  imports: [Download, LucideModule, ScrollRevealDirective, AlreveleTranslatorModule],
+  imports: [Download, LucideModule, ScrollRevealDirective, TrlFallbackPipe],
   templateUrl: './how-it-works.html',
   styleUrl: './how-it-works.css',
 })
