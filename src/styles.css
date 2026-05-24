@@ -61,7 +61,7 @@
   --color-download: #2F3244;
   --color-main: #000000;
 
-
+  --color-icon: #7462B9;
   --font-sans: 'Jost', ui-sans-serif, system-ui;
 }
 
@@ -75,6 +75,10 @@
   --color-download: #000000;
   --color-button: #6F4CE8;
   --color-main: #FFFFFF;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html, body {
