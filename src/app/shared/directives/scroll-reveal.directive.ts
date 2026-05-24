@@ -2,7 +2,6 @@ import { Directive, ElementRef, OnInit, Renderer2, Input, inject } from '@angula
 
 @Directive({
   selector: '[appScrollReveal]',
-  standalone: true
 })
 export class ScrollRevealDirective implements OnInit {
   private el = inject(ElementRef);
@@ -27,7 +26,7 @@ export class ScrollRevealDirective implements OnInit {
             this.renderer.removeClass(this.el.nativeElement, 'opacity-0');
             this.renderer.removeClass(this.el.nativeElement, 'translate-y-8');
             this.renderer.removeClass(this.el.nativeElement, 'scale-95');
-            
+
             this.renderer.addClass(this.el.nativeElement, 'opacity-100');
             this.renderer.addClass(this.el.nativeElement, 'translate-y-0');
             this.renderer.addClass(this.el.nativeElement, 'scale-100');
@@ -38,7 +37,7 @@ export class ScrollRevealDirective implements OnInit {
           this.renderer.removeClass(this.el.nativeElement, 'opacity-100');
           this.renderer.removeClass(this.el.nativeElement, 'translate-y-0');
           this.renderer.removeClass(this.el.nativeElement, 'scale-100');
-          
+
           this.renderer.addClass(this.el.nativeElement, 'opacity-0');
           this.renderer.addClass(this.el.nativeElement, 'translate-y-8');
           this.renderer.addClass(this.el.nativeElement, 'scale-95');

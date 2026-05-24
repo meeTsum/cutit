@@ -7,7 +7,7 @@
       </div>
       <div #scrollContainer
            (scroll)="onScroll($event)"
-           class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide items-center gap-10 font-medium custom-scrollbar-hide">
+           class="flex w-full overflow-x-auto snap-x snap-mandatory scrollbar-hide items-stretch gap-10 font-medium custom-scrollbar-hide">
 
           @for (testimonial of testimonials; track $index) {
             <div class="flex flex-col flex-none w-[85%] bg-site-3 border rounded-[2.5rem] border-gray-500/10 py-8 px-4 md:w-[calc(40%-12px)] lg:w-[calc(25%-30px)] gap-4 hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_15px_30px_rgba(60,21,201,0.08)] transition-all duration-300 ease-out cursor-pointer"
@@ -29,13 +29,13 @@
               </div>
 
               <!-- Author -->
-              <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-2">
+              <div class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start gap-2 mt-auto">
                 <div class="flex flex-col">
-                  <div class="bg-gray-500 rounded-full px-3 py-3 text-white">
+                  <div class="flex items-center justify-center bg-gray-500 rounded-full size-10 text-white font-semibold text-sm">
                     {{ testimonial.initials }}
                   </div>
                 </div>
-                <div class="flex flex-col items-center md:items-start py-2">
+                <div class="flex flex-col items-center md:items-start py-1">
                   <p class="font-bold text-sm">{{ testimonial.name }}</p>
                   <p class="text-xs opacity-50">{{ testimonial.role | trl }}</p>
                 </div>
