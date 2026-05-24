@@ -52,12 +52,10 @@
                   class="relative h-2 rounded-full overflow-hidden bg-gray-200 transition-all duration-300 ease-out hover:scale-110 cursor-pointer"
                   [style.width.px]="$index === currentIndicator ? 48 : 8">
 
-            @if ($index === currentIndicator) {
-              <!-- Active Progress Fill -->
-              <div class="absolute top-0 left-0 h-full bg-site-nav"
-                   [style.width.%]="displayProgress">
-              </div>
-            }
+            <!-- Progress Fill (Active or Completed) -->
+            <div class="absolute top-0 left-0 h-full bg-site-nav transition-all duration-300"
+                 [style.width.%]="$index < currentIndicator ? 100 : ($index === currentIndicator ? displayProgress : 0)">
+            </div>
           </button>
         }
       </div>

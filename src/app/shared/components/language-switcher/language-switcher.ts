@@ -16,8 +16,11 @@ export class LanguageSwitcher {
   isOpen = signal(false);
 
   languages = [
-    { code: 'EN', label: 'Anglais' },
-    { code: 'FR', label: 'Français' },
+    { code: 'FR', label: 'Français', flag: '🇫🇷' },
+    { code: 'EN', label: 'English', flag: '🇺🇸' },
+    { code: 'ES', label: 'Español', flag: '🇪🇸' },
+    { code: 'PT', label: 'Português', flag: '🇵🇹' },
+    { code: 'AR', label: 'العربية', flag: '🇸🇦' },
   ];
 
   selectedLang = signal(this.languages[0]);

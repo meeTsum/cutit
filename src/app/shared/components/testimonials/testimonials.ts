@@ -82,29 +82,11 @@ export class Testimonials implements OnInit, OnDestroy {
     this.autoPlayInterval = setInterval(() => {
       if (this.isPaused) return;
 
-      this.progress += this.TICK_MS / this.ITEM_DURATION_MS;  // incrémente entre 0 et 1
+      this.progress += this.TICK_MS / this.ITEM_DURATION_MS; // incrémente entre 0 et 1
 
       if (this.progress >= 1) {
-        this.progress = 1;  // on cap à 1 pour éviter tout dépassement
-
-        // On vérifie si on est à une extrémité totale de la liste
-        const isAtEnd = this.currentIndex === this.totalItems - 1 && this.direction === 1;
-        const isAtStart = this.currentIndex === 0 && this.direction === -1;
-
-        if (isAtEnd || isAtStart) {
-          // Pause aux extrémités, puis on change de direction
-          this.isPaused = true;
-          this.pauseTimeout = setTimeout(() => {
-            this.isPaused = false;
-            this.progress = 0;
-            this.direction *= -1; // Inverse le sens
-            this.nextSlide();
-          }, this.PAUSE_DURATION_MS);
-        } else {
-          // Slide suivant (ou précédent)
-          this.progress = 0;
-          this.nextSlide();
-        }
+        this.progress = 0; // Réinitialise la portion de progression
+        this.nextSlide();
       }
     }, this.TICK_MS);
   }
@@ -121,13 +103,11 @@ export class Testimonials implements OnInit, OnDestroy {
     // Calcule le prochain index selon la direction
     let nextIndex = this.currentIndex + this.direction;
 
-    // Sécurité pour ne jamais sortir de l'index du tableau
+    // Défilement circulaire infini (wrap around) selon le sens de défilement
     if (nextIndex >= this.totalItems) {
-      nextIndex = this.totalItems - 1;
-      this.direction = -1;
+      nextIndex = 0; // Retourne au début si on dépasse la fin
     } else if (nextIndex < 0) {
-      nextIndex = 0;
-      this.direction = 1;
+      nextIndex = this.totalItems - 1; // Va à la fin si on dépasse le début
     }
 
     this.currentIndex = nextIndex;
