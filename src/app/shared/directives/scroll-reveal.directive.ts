@@ -32,7 +32,16 @@ export class ScrollRevealDirective implements OnInit {
             this.renderer.addClass(this.el.nativeElement, 'translate-y-0');
             this.renderer.addClass(this.el.nativeElement, 'scale-100');
           }, this.revealDelay);
-          observer.unobserve(this.el.nativeElement);
+        } else {
+          // Remettre l'élément dans son état initial masqué lorsqu'il sort de l'écran
+          // afin que l'animation se rejoue lors du prochain défilement !
+          this.renderer.removeClass(this.el.nativeElement, 'opacity-100');
+          this.renderer.removeClass(this.el.nativeElement, 'translate-y-0');
+          this.renderer.removeClass(this.el.nativeElement, 'scale-100');
+          
+          this.renderer.addClass(this.el.nativeElement, 'opacity-0');
+          this.renderer.addClass(this.el.nativeElement, 'translate-y-8');
+          this.renderer.addClass(this.el.nativeElement, 'scale-95');
         }
       });
     }, { threshold: 0.05 });

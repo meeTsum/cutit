@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Feature } from '../../../core/interfaces/features';
 import { LucideModule } from '../../lucide.module';
-import { TrlPipe } from '@alrevele/translator';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
 
 
 @Component({
   selector: 'app-features',
-  imports: [CommonModule, LucideModule, TrlPipe, ScrollRevealDirective],
+  imports: [CommonModule, LucideModule, ScrollRevealDirective],
   templateUrl: './features.html',
   styleUrl: './features.css',
 })
