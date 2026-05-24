@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { Download } from "../download/download";
-
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
+import { AlreveleTranslatorModule } from '@alrevele/translator';
 
 @Component({
   selector: 'app-hero',
-  imports: [Download, ScrollRevealDirective],
+  imports: [Download, ScrollRevealDirective, AlreveleTranslatorModule],
   templateUrl: './hero.html',
   styleUrl: './hero.css',
 })

@@ -5,6 +5,7 @@ import { Footer } from '../footer/footer';
 import { Download } from '../download/download';
 import { Logo } from '../logo/logo';
 import { LucideModule } from '../../lucide.module';
+import { AlreveleTranslatorModule } from '@alrevele/translator';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,8 @@ import { LucideModule } from '../../lucide.module';
     LanguageSwitcher,
     Footer,
     Download,
-    Logo
+    Logo,
+    AlreveleTranslatorModule
   ],
   templateUrl: './header.html',
   styleUrl: './header.css',

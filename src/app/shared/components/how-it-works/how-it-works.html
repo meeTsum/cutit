@@ -3,11 +3,9 @@
   <div class="relative z-10 flex flex-col items-center justify-center px-4 py-6 md:py-15 md:px-4 text-center w-full gap-10 mx-auto md:max-w-[75%]">
 
     <div class="flex flex-col items-center justify-center gap-6">
-      <h2 class="text-xl md:text-2xl font-semibold">Comment ça marche</h2>
+      <h2 class="text-xl md:text-2xl font-semibold">{{ 'Comment ça marche' | trl }}</h2>
       <p class="hidden lg:block text-base text-center opacity-80 lg:px-30">
-        Découper manuellement une longue vidéo en plusieurs morceaux est fastidieux et répétitif.
-        Cutit prend le relais et transforme vos vidéos volumineuses en une suite de mini-clips parfaits.
-        5 étapes simples pour dominer vos flux de publication :
+        {{ 'Découper manuellement une longue vidéo en plusieurs morceaux est fastidieux et répétitif. Cutit prend le relais et transforme vos vidéos volumineuses en une suite de mini-clips parfaits. 5 étapes simples pour dominer vos flux de publication :' | trl }}
       </p>
     </div>
 
@@ -20,8 +18,8 @@
           </div>
 
           <div class="flex flex-col items-center justify-center gap-4">
-            <h4 class="font-bold text-sm md:text-base">{{ step.title }}</h4>
-            <p class="text-xs opacity-70">{{ step.description }}</p>
+            <h4 class="font-bold text-sm md:text-base">{{ step.title | trl }}</h4>
+            <p class="text-xs opacity-70">{{ step.description | trl }}</p>
           </div>
         </div>
       }

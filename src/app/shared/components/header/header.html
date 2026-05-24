@@ -5,9 +5,9 @@
     <app-theme-toggle class="hidden md:flex"/>
 
     <nav class="hidden md:flex gap-8 text-sm font-medium">
-      <a href="#features" class="hover:opacity-70 transition">Fonctionnalités</a>
-      <a href="#how-it-works" class="hover:opacity-70 transition">Comment ça marche</a>
-      <a href="#testimonials" class="hover:opacity-70 transition">Témoignages</a>
+      <a href="#features" class="hover:opacity-70 transition">{{ 'Fonctionnalités' | trl }}</a>
+      <a href="#how-it-works" class="hover:opacity-70 transition">{{ 'Comment ça marche' | trl }}</a>
+      <a href="#testimonials" class="hover:opacity-70 transition">{{ 'Témoignages' | trl }}</a>
     </nav>
 
     <div class="flex md:hidden items-center gap-2">
@@ -29,11 +29,11 @@
           </div>
 
           <div class="flex flex-col items-start justify-start gap-5 px-6 py-4 bg-site font-normal">
-            <a href="#features" (click)="toggleMenu()" class="hover:opacity-70 transition">Fonctionnalités</a>
+            <a href="#features" (click)="toggleMenu()" class="hover:opacity-70 transition">{{ 'Fonctionnalités' | trl }}</a>
             <div class="h-px w-full bg-main/10"></div>
-            <a href="#how-it-works" (click)="toggleMenu()" class="hover:opacity-70 transition">Comment ça marche</a>
+            <a href="#how-it-works" (click)="toggleMenu()" class="hover:opacity-70 transition">{{ 'Comment ça marche' | trl }}</a>
             <div class="h-px w-full bg-main/10"></div>
-            <a href="#testimonials" (click)="toggleMenu()" class="hover:opacity-70 transition">Témoignages</a>
+            <a href="#testimonials" (click)="toggleMenu()" class="hover:opacity-70 transition">{{ 'Témoignages' | trl }}</a>
           </div>
 
           <div class="flex flex-col items-center justify-start gap-5 px-6 pt-10">

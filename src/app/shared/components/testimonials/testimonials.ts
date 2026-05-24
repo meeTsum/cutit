@@ -2,10 +2,11 @@ import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/co
 import { LucideModule } from '../../lucide.module';
 import { Testimonial } from '../../../core/interfaces/testimonials';
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
+import { AlreveleTranslatorModule } from '@alrevele/translator';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [LucideModule, ScrollRevealDirective],
+  imports: [LucideModule, ScrollRevealDirective, AlreveleTranslatorModule],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.css',
 })

@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { Download } from "../download/download";
 import { LucideModule } from '../../lucide.module';
-
 import { ScrollRevealDirective } from '../../directives/scroll-reveal.directive';
+import { AlreveleTranslatorModule } from '@alrevele/translator';
 
 @Component({
   selector: 'app-how-it-works',
-  imports: [Download, LucideModule, ScrollRevealDirective],
+  imports: [Download, LucideModule, ScrollRevealDirective, AlreveleTranslatorModule],
   templateUrl: './how-it-works.html',
   styleUrl: './how-it-works.css',
 })
