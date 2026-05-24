@@ -1,5 +1,5 @@
 export interface Feature{
   title: string;
-  decription: string;
+  description: string;
   icon: string
 }

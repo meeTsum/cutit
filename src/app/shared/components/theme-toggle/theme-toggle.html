@@ -1,0 +1,17 @@
+<div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm p-1 rounded-lg border border-white/10 shadow-inner">
+
+  <!-- Light -->
+   @if (currentTheme() != 'light') {
+    <button (click)="toggleTheme()"
+        class="p-1.5 text-white rounded-full transition-all duration-300">
+      <lucide-icon name="sun" [size]="17" strokeWidth="2.5"></lucide-icon>
+    </button>
+}
+  <!-- Dark -->
+   @if (currentTheme() != 'dark') {
+  <button (click)="toggleTheme()"
+      class="p-1.5 text-white rounded-full transition-all duration-300">
+    <lucide-icon name="moon-star" [size]="17" strokeWidth="2.5"></lucide-icon>
+  </button>
+}
+</div>

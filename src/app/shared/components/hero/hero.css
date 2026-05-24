@@ -1,0 +1,21 @@
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.bg-primary\/20 {
+  animation: float 6s ease-in-out infinite;
+}
+
+.bg-primary-light\/10 {
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.border-primary\/10 {
+  animation: float 10s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}

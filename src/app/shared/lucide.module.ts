@@ -14,7 +14,10 @@ import {
   ChevronLeft,
   ChevronRight,
   Scissors,
-  CirclePlus
+  CirclePlus,
+  ChartNoAxesGantt,
+  Globe,
+  ChevronDown
 } from 'lucide-angular';
 
 @NgModule({
@@ -34,6 +37,9 @@ import {
       ChevronRight,
       Scissors,
       CirclePlus,
+      ChartNoAxesGantt,
+      Globe,
+      ChevronDown
     })
   ],
   exports: [LucideAngularModule]

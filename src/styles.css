@@ -77,6 +77,10 @@
   --color-main: #FFFFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   font-family: var(--font-sans);
 }

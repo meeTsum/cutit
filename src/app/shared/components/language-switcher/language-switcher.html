@@ -1,0 +1,31 @@
+<div class="relative inline-block text-left font-sans">
+
+  <!-- Déclencheur -->
+  <button (click)="toggleDropdown()"
+          class="flex items-center gap-1.5 py-2 px-3 text-white hover:opacity-70 cursor-pointer transition-colors duration-200">
+    <span class="text-[15px] font-bold tracking-wide uppercase">{{ selectedLang().code }}</span>
+    <lucide-icon name="chevron-down"
+                 [size]="14"
+                 class="text-white transition-transform duration-200"
+                 [class.rotate-180]="isOpen()"></lucide-icon>
+  </button>
+
+  <!-- Menu Dropdown -->
+  @if (isOpen()) {
+    <div class="absolute right-0 mt-1 w-44 origin-top-right rounded-lg bg-site-light shadow-[0_10px_25px_rgba(0,0,0,0.1)] border border-gray-500/10 overflow-hidden z-50">
+      <div class="py-1">
+        @for (lang of languages; track lang.code) {
+          <button (click)="selectLanguage(lang)"
+                  class="flex items-center w-full px-5 py-3 text-[14px] transition-colors duration-150 text-left"
+                  [class.bg-[#3182CE]]="selectedLang().code === lang.code"
+                  [class.text-white]="selectedLang().code === lang.code"
+                  [class.text-gray-700]="selectedLang().code !== lang.code"
+                  [class.hover:bg-gray-50]="selectedLang().code !== lang.code">
+            <span class="font-normal">{{ lang.label }}</span>
+          </button>
+        }
+      </div>
+    </div>
+  }
+
+</div>

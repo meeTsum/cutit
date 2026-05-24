@@ -1,0 +1,36 @@
+<section id="how-it-works" class="relative bg-site-light text-main overflow-hidden py-15">
+
+  <div class="relative z-10 flex flex-col items-center justify-center px-4 py-6 md:py-15 md:px-4 text-center w-full gap-10 mx-auto md:max-w-[75%]">
+
+    <div class="flex flex-col items-center justify-center gap-6">
+      <h2 class="text-xl md:text-3xl text-main opacity-70">Comment ça marche</h2>
+      <p class="hidden lg:block text-base text-center opacity-70 lg:px-30">
+        Découper manuellement une longue vidéo en plusieurs morceaux est fastidieux et répétitif. 
+        Cutit prend le relais et transforme vos vidéos volumineuses en une suite de mini-clips parfaits. 
+        5 étapes simples pour dominer vos flux de publication :
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-y-10 gap-x-8 w-full px-8">
+      @for (step of steps; track step.title; let i = $index) {
+        <div class="flex flex-col items-center bg-site border border-gray-500/10 rounded-[2.5rem] px-6 py-8 gap-4 hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[0_15px_30px_rgba(60,21,201,0.12)] transition-all duration-300 ease-out cursor-pointer group"
+             appScrollReveal [revealDelay]="i * 100">
+          <div class="flex items-center justify-center rounded-2xl bg-icon p-3">
+            <lucide-icon [name]="step.icon" class="stroke-1 w-6 h-6 text-white"></lucide-icon>
+          </div>
+
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h4 class="font-bold text-sm md:text-base">{{ step.title }}</h4>
+            <p class="text-xs opacity-70">{{ step.description }}</p>
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="w-full flex flex-col items-center justify-center pt-10">
+      <app-download/>
+    </div>
+
+  </div>
+
+</section>
